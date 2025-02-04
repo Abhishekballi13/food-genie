@@ -29013,15 +29013,26 @@ const RestaurantMenu = ()=>{
     //this makes our code becomes more testable
     const resInfo = (0, _useRestrauntMenuDefault.default)(resId);
     const [showIndex, setShowIndex] = (0, _react.useState)(0);
+    const [categories, setCategories] = (0, _react.useState)([]);
+    //categories like bestseller and all
+    (0, _react.useEffect)(()=>{
+        console.log("resInfo:", resInfo);
+        const regularCards = resInfo?.cards?.find((card)=>card.groupedCard?.cardGroupMap?.REGULAR)?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+        if (regularCards) {
+            const filteredCategories = regularCards.filter((c)=>c.card?.["card"]?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
+            console.log("Filtered Categories:", filteredCategories);
+            setCategories(filteredCategories);
+        } else console.log("No REGULAR cards found.");
+    }, [
+        resInfo
+    ]);
     if (resInfo === null) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerDefault.default), {}, void 0, false, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 22,
+        lineNumber: 43,
         columnNumber: 31
     }, undefined);
     const { name, cuisines, costForTwoMessage } = resInfo?.cards[2]?.card?.card?.info;
     // const {itemCards} = resInfo?.cards[5]?.groupedCard?.cardGroupMap?    .REGULAR?.cards[1]?.card?.card;
-    //categories like bestseller and all
-    const categories = resInfo?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter((c)=>c.card?.["card"]?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory");
     // console.log(categories[0].card.card.title)
     // if(categories===null) return <Shimmer/>;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29032,7 +29043,7 @@ const RestaurantMenu = ()=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 40,
+                lineNumber: 57,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -29044,27 +29055,27 @@ const RestaurantMenu = ()=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantMenu.js",
-                lineNumber: 41,
+                lineNumber: 58,
                 columnNumber: 13
             }, undefined),
             console.log(categories),
-            categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
+            categories && categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantCategoryDefault.default), {
                     data: category?.card?.card,
                     showItems: index === showIndex ? true : false,
                     setShowIndex: ()=>setShowIndex(index === showIndex ? null : index)
                 }, category?.card?.card?.title, false, {
                     fileName: "src/components/RestaurantMenu.js",
-                    lineNumber: 53,
+                    lineNumber: 70,
                     columnNumber: 17
                 }, undefined))
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantMenu.js",
-        lineNumber: 39,
+        lineNumber: 56,
         columnNumber: 9
     }, undefined);
 };
-_s(RestaurantMenu, "VDde+jRKslT/1Frd/metrkqK/3Q=", false, function() {
+_s(RestaurantMenu, "c+O6SZYK3Hla1EUEZ800MZYW5Lo=", false, function() {
     return [
         (0, _reactRouterDom.useParams),
         (0, _useRestrauntMenuDefault.default)
