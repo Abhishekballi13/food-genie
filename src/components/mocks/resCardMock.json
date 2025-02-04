@@ -1,0 +1,131 @@
+{
+    "card": {
+        "card": {
+            "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+            "info": {
+                "id": "686198",
+                "name": "Chinese Wok",
+                "city": "39",
+                "slugs": {
+                    "restaurant": "chinese-wok-metro-station-swaroop-nagar",
+                    "city": "kanpur"
+                },
+                "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+                "address": "Shop No- 3, Ground Floor, Moti Jheel Metro Station, Kanpur, NAGAR NIGAM FOOD SAFETY ZONE-09, Kanpur Nagar, Uttar Pradesh, 208001",
+                "locality": "Metro Station",
+                "areaName": "Moti Jheel",
+                "costForTwo": "25000",
+                "costForTwoMessage": "₹250 FOR TWO",
+                "cuisines": [
+                    "Chinese",
+                    "Asian",
+                    "Tibetan",
+                    "Desserts"
+                ],
+                "avgRating": 4.3,
+                "feeDetails": {},
+                "avgRatingString": "4.3",
+                "totalRatingsString": "1.1K+",
+                "promoted": true,
+                "adTrackingId": "cid=23660823~p=0~adgrpid=23660823#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=686198~st=chinese~eid=e575a98f-1062-49e9-9d4e-be51742ad524~srvts=1736621276128",
+                "sla": {
+                    "deliveryTime": 22,
+                    "minDeliveryTime": 20,
+                    "maxDeliveryTime": 25,
+                    "lastMileTravel": 2.1,
+                    "serviceability": "SERVICEABLE",
+                    "rainMode": "RAIN_MODE_NONE",
+                    "slaString": "20-25 MINS",
+                    "lastMileTravelString": "2.1 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "opened": true,
+                    "restaurantClosedMeta": {}
+                },
+                "aggregatedDiscountInfo": {
+                    "header": "Get items under 149",
+                    "shortDescriptionList": [
+                        {
+                            "meta": "Get items under 149",
+                            "discountType": "FinalPrice",
+                            "operationType": "RESTAURANT"
+                        }
+                    ],
+                    "descriptionList": [
+                        {
+                            "meta": "Get items under 149",
+                            "discountType": "FinalPrice",
+                            "operationType": "RESTAURANT"
+                        }
+                    ]
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "Rxawards/_CATEGORY-Chinese.png",
+                            "description": "Delivery!"
+                        }
+                    ]
+                },
+                "aggregatedDiscountInfoV2": {
+                    "header": "50% OFF",
+                    "shortDescriptionList": [
+                        {
+                            "discountType": "FinalPrice",
+                            "operationType": "RESTAURANT"
+                        }
+                    ],
+                    "descriptionList": [
+                        {
+                            "meta": "Get items under 149",
+                            "discountType": "FinalPrice",
+                            "operationType": "RESTAURANT"
+                        }
+                    ]
+                },
+                "ratingSlab": "RATING_SLAB_5",
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {},
+                    "commsStyling": {}
+                },
+                "cartOrderabilityNudgeBanner": {
+                    "parameters": {},
+                    "presentation": {}
+                },
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+                "featuredSectionInfo": {
+                    "sectionTitle": "More"
+                },
+                "campaignId": "23660823"
+            },
+            "analytics": {
+                "screenName": "explore",
+                "context": "{\"tid\":\"44b30770-fcd9-a191-415b-30442e6fbd65\",\"grid\":\"9c8f90dc-619b-4eed-92aa-ab60a973aa79\",\"queryUniqueId\":\"54f0c1ea-4e23-8c11-118c-865e84754149\",\"query\":\"Chinese\",\"adTrackingId\":\"cid=23660823~p=0~adgrpid=23660823#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=686198~st=chinese~eid=e575a98f-1062-49e9-9d4e-be51742ad524~srvts=1736621276128\"}",
+                "objectValue": "686198",
+                "impressionObjectName": "impression-restaurant-ad",
+                "clickObjectName": "click-restaurant-ad"
+            },
+            "ctaWithParams": {
+                "link": "swiggy://menu",
+                "type": "DEEPLINK",
+                "params": {
+                    "source": "SEARCH",
+                    "isSld": "false",
+                    "sourceRequestId": "de2412d17ad8cdc86989532be7c020f7",
+                    "restaurant_id": "686198",
+                    "query": "Chinese",
+                    "sourceSessionId": "ibc9fb7f-c75e-4737-8cad-7d07f86b4fd6"
+                }
+            }
+        }
+    }
+}
